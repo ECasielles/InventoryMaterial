@@ -85,8 +85,8 @@ public class DependencyRepository {
      */
     public static DependencyRepository getInstance(){
         //Nunca va a valer null si no se hace inicialización estática
-        /*if (dependencyRepository == null)
-            dependencyRepository = new DependencyRepository();*/
+        if (dependencyRepository == null)
+            dependencyRepository = new DependencyRepository();
         return dependencyRepository;
     }
     /**

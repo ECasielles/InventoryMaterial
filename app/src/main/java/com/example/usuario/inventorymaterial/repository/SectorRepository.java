@@ -20,9 +20,7 @@ public class SectorRepository {
     /*INICIALIZACIÓN*/
     //De esta forma inicializa los atributos de ámbito estático o de clase
     //Es la forma alternativa aunque puede ser costoso y se puede evitar
-    static {
-        sectorRepository = new SectorRepository();
-    }
+    static { sectorRepository = new SectorRepository(); }
 
     /**
      * Constructor privado que garantiza una instancia única de la clase
@@ -87,6 +85,8 @@ public class SectorRepository {
      */
     public static SectorRepository getInstance(){
         //Nunca va a valer null si no se hace inicialización estática
+        if(sectorRepository == null)
+            sectorRepository = new SectorRepository();
         return sectorRepository;
     }
     /**

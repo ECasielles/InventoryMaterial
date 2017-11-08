@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Clase POJO que representa una dependencia.
+ * Clase POJO que representa la entidad sector
  *
  * @author Enrique Casielles
  * @version 1.0
