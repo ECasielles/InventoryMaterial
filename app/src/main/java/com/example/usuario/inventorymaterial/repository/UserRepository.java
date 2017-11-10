@@ -65,4 +65,12 @@ public class UserRepository {
         return users;
     }
 
+    /**
+     * Comprueba si un usuario existe en la base de datos
+     * @param newuser Usuario que se quiere buscar en la BD
+     * @return true si existe en la BD
+     */
+    public boolean isUserExists(User newuser) {
+        return true;
+    }
 }

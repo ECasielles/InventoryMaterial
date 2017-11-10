@@ -73,7 +73,23 @@ public class User {
         isManager = manager;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
 
+        User user1 = (User) o;
+
+        if (!getUser().equals(user1.getUser())) return false;
+        return getEmail().equals(user1.getEmail());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getUser().hashCode();
+        result = 31 * result + getEmail().hashCode();
+        return result;
+    }
 
     @Override
     public String toString() {
